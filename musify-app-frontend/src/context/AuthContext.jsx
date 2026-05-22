@@ -2,7 +2,7 @@ import {createContext, useContext, useEffect, useState} from "react";
 import axios from "axios";
 
 export const AuthContext = createContext();
-export const API_BASE_URL = "http://localhost:8080";
+export const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
 export const useAuth = () => {
     const context = useContext(AuthContext);
     if (!context) {
