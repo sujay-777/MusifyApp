@@ -35,7 +35,6 @@ build/
 
 .env
 .env.*
-application.properties
 application.yml
 
 # ======================
